@@ -7,6 +7,7 @@ const Inventory = props => {
     <div className="inventory">
       <h1>Inventory</h1>
       <AddFishForm addFish={props.addFish} />
+      <button onClick={props.loadSampleFishes}>Load Sample Fishes</button>
     </div>
   );
 };

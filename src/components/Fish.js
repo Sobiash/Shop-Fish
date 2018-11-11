@@ -1,28 +1,23 @@
 import React from "react";
-import Fishes from "./SampleFishes.json";
 import { formatPrice } from "./helpers";
 import "./Fish.css";
 
 class Fish extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        {Fishes.map(details => {
-          return (
-            <li className="menu-fish" key={details.id}>
-              <img src={details.image} alt={details.name} />
-              <h3 className="fish-name">
-                {details.name}
-                <span className="price">{formatPrice(details.price)}</span>
-              </h3>
-              <p className="desc">{details.desc}</p>
-              <button disabled={details.status === "unavailable"}>
-                {details.status === "available" ? "Add To Cart" : "Sold Out!"}
-              </button>
-            </li>
-          );
-        })}
-      </React.Fragment>
+      <li className="menu-fish">
+        <img src={this.props.details.image} alt={this.props.details.name} />
+        <h3 className="fish-name">
+          {this.props.details.name}
+          <span className="price">{formatPrice(this.props.details.price)}</span>
+        </h3>
+        <p className="desc">{this.props.details.desc}</p>
+        <button disabled={this.props.details.status === "unavailable"}>
+          {this.props.details.status === "available"
+            ? "Add To Cart"
+            : "Sold Out!"}
+        </button>
+      </li>
     );
   }
 }

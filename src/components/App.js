@@ -3,6 +3,7 @@ import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
 import Fish from "./Fish";
+import sampleFishes from "./SampleFishes";
 import "../index.css";
 class App extends Component {
   state = {
@@ -16,7 +17,11 @@ class App extends Component {
     this.setState({
       fishes
     });
-    console.log(fishes);
+  };
+  loadSampleFishes = () => {
+    this.setState({
+      fishes: sampleFishes
+    });
   };
 
   render() {
@@ -25,11 +30,16 @@ class App extends Component {
         <div className="menu">
           <Header />
           <ul className="fishes">
-            <Fish />
+            {Object.keys(this.state.fishes).map(key => (
+              <Fish key={key} details={this.state.fishes[key]} />
+            ))}
           </ul>
         </div>
         <Order />
-        <Inventory addFish={this.addFish} />
+        <Inventory
+          addFish={this.addFish}
+          loadSampleFishes={this.loadSampleFishes}
+        />
       </div>
     );
   }
