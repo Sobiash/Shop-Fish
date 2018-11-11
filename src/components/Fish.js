@@ -10,12 +10,12 @@ class Fish extends React.Component {
         {Fishes.map(details => {
           return (
             <li className="menu-fish" key={details.id}>
-              {/* <img src={details.image} alt={details.name} /> */}
+              <img src={details.image} alt={details.name} />
               <h3 className="fish-name">
                 {details.name}
                 <span className="price">{formatPrice(details.price)}</span>
               </h3>
-              <p className="tools">{details.desc}</p>
+              <p className="desc">{details.desc}</p>
               <button disabled={details.status === "unavailable"}>
                 {details.status === "available" ? "Add To Cart" : "Sold Out!"}
               </button>
