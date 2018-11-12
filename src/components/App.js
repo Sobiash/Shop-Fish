@@ -5,11 +5,16 @@ import Inventory from "./Inventory";
 import Fish from "./Fish";
 import sampleFishes from "./SampleFishes";
 import "../index.css";
+
+// import base from "../base";
 class App extends Component {
   state = {
     fishes: {},
     order: {}
   };
+  // componentDidMount() {
+  //   this.ref = base.syncState();
+  // }
 
   addFish = fish => {
     const fishes = { ...this.state.fishes };

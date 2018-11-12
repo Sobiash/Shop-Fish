@@ -20,8 +20,19 @@ export function slugify(text) {
     .replace(/-+$/, "");
 }
 
-export function getIds() {
-  const Ids = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+export function getStoreName() {
+  const storeIds = [
+    "poland",
+    "norway",
+    "sweden",
+    "denmark",
+    "srilanka",
+    "finland",
+    "canada",
+    "america",
+    "england",
+    "australia"
+  ];
 
-  return `${rando(Ids)}`;
+  return `${rando(storeIds)}`;
 }
