@@ -5,16 +5,22 @@ import Inventory from "./Inventory";
 import Fish from "./Fish";
 import sampleFishes from "./SampleFishes";
 import "../index.css";
-
-// import base from "../base";
+import base from "../base";
 class App extends Component {
   state = {
     fishes: {},
     order: {}
   };
-  // componentDidMount() {
-  //   this.ref = base.syncState();
-  // }
+  componentDidMount() {
+    this.ref = base.syncState(`${this.props.match.params.storeId}/fishes`, {
+      context: this,
+      state: "fishes"
+    });
+  }
+
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
 
   addFish = fish => {
     const fishes = { ...this.state.fishes };
