@@ -6,7 +6,7 @@ import App from "./App";
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={Store} />
+      <Route exact path="/fish-shop" component={Store} />
       <Route path="/store/:storeId" component={App} />
     </Switch>
   </BrowserRouter>
