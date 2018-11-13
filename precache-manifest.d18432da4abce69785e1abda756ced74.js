@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/Shop-Fish/static/js/runtime~main.adce1b0d.js"
   },
   {
-    "revision": "613306235b41e7de8df2",
-    "url": "/Shop-Fish/static/js/main.61330623.chunk.js"
+    "revision": "55998788373940c43530",
+    "url": "/Shop-Fish/static/js/main.55998788.chunk.js"
   },
   {
     "revision": "60d673d13546726df1f4",
     "url": "/Shop-Fish/static/js/1.60d673d1.chunk.js"
   },
   {
-    "revision": "613306235b41e7de8df2",
-    "url": "/Shop-Fish/static/css/main.b38dce53.chunk.css"
+    "revision": "55998788373940c43530",
+    "url": "/Shop-Fish/static/css/main.ab860268.chunk.css"
   },
   {
-    "revision": "819dc902151a6fc932ed5916d5231532",
+    "revision": "bdd0af59db68c3c4e886501ba1e99e72",
     "url": "/Shop-Fish/index.html"
   }
 ];
