@@ -1,13 +1,13 @@
 {
-  "main.css": "/fish-shop/static/css/main.b38dce53.chunk.css",
-  "main.js": "/fish-shop/static/js/main.dde34455.chunk.js",
-  "main.js.map": "/fish-shop/static/js/main.dde34455.chunk.js.map",
-  "static/js/1.fb1ed9e8.chunk.js": "/fish-shop/static/js/1.fb1ed9e8.chunk.js",
-  "static/js/1.fb1ed9e8.chunk.js.map": "/fish-shop/static/js/1.fb1ed9e8.chunk.js.map",
-  "runtime~main.js": "/fish-shop/static/js/runtime~main.c4653ce4.js",
-  "runtime~main.js.map": "/fish-shop/static/js/runtime~main.c4653ce4.js.map",
-  "static/css/main.b38dce53.chunk.css.map": "/fish-shop/static/css/main.b38dce53.chunk.css.map",
-  "index.html": "/fish-shop/index.html",
-  "precache-manifest.99e61895b8216d4316cc6dcc1311f245.js": "/fish-shop/precache-manifest.99e61895b8216d4316cc6dcc1311f245.js",
-  "service-worker.js": "/fish-shop/service-worker.js"
+  "main.css": "/Shop-Fish/static/css/main.b38dce53.chunk.css",
+  "main.js": "/Shop-Fish/static/js/main.be90b884.chunk.js",
+  "main.js.map": "/Shop-Fish/static/js/main.be90b884.chunk.js.map",
+  "static/js/1.60d673d1.chunk.js": "/Shop-Fish/static/js/1.60d673d1.chunk.js",
+  "static/js/1.60d673d1.chunk.js.map": "/Shop-Fish/static/js/1.60d673d1.chunk.js.map",
+  "runtime~main.js": "/Shop-Fish/static/js/runtime~main.adce1b0d.js",
+  "runtime~main.js.map": "/Shop-Fish/static/js/runtime~main.adce1b0d.js.map",
+  "static/css/main.b38dce53.chunk.css.map": "/Shop-Fish/static/css/main.b38dce53.chunk.css.map",
+  "index.html": "/Shop-Fish/index.html",
+  "precache-manifest.55407681ba86dbd97b5f2fa738f99729.js": "/Shop-Fish/precache-manifest.55407681ba86dbd97b5f2fa738f99729.js",
+  "service-worker.js": "/Shop-Fish/service-worker.js"
 }
