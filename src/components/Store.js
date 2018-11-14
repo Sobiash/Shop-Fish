@@ -1,7 +1,11 @@
 import React from "react";
-import { getStoreName } from "./helpers";
+import PropTypes from "prop-types";
+import { getStoreName } from "../helpers";
 
 class Store extends React.Component {
+  static propTypes = {
+    history: PropTypes.object
+  };
   storeInput = React.createRef();
   goToStore = e => {
     e.preventDefault();

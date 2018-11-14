@@ -1,15 +1,20 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
 import Fish from "./Fish";
-import sampleFishes from "./SampleFishes";
+import sampleFishes from "../SampleFishes";
 import "../index.css";
 import base from "../base";
 class App extends Component {
   state = {
     fishes: {},
     order: {}
+  };
+
+  static propTypes = {
+    match: PropTypes.object
   };
   componentDidMount() {
     const localStorageRef = localStorage.getItem(

@@ -1,12 +1,28 @@
 import React from "react";
-import { formatPrice } from "./helpers";
+import PropTypes from "prop-types";
+import { formatPrice } from "../helpers";
 import "./Fish.css";
 
 class Fish extends React.Component {
+  static propTypes = {
+    details: PropTypes.shape({
+      name: PropTypes.string,
+      image: PropTypes.string,
+      desc: PropTypes.string,
+      status: PropTypes.string,
+      price: PropTypes.number
+    }),
+    addToOrder: PropTypes.func,
+    ordKey: PropTypes.string
+  };
   render() {
     return (
       <li className="menu-fish">
-        <img src={this.props.details.image} alt={this.props.details.name} />
+        <img
+          src={this.props.details.image}
+          alt={this.props.details.name}
+          className="img"
+        />
         <h3 className="fish-name">
           {this.props.details.name}
           <span className="price">{formatPrice(this.props.details.price)}</span>

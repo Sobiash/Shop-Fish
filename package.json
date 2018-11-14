@@ -12,13 +12,13 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1"
   },
-  "homepage": "https://sobiash.github.io/fish-shop",
+  "homepage": "https://sobiash.github.io/Shop-Fish",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -3,7 +3,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 .menu-fish {
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
@@ -27,12 +26,11 @@ ul {
   font-size: 1.4rem;
   justify-content: flex-end;
 }
-.menu-fish img {
+.menu-fish .img {
   float: left;
   width: 150px;
   margin-right: 1rem;
 }
-
 button {
   text-transform: uppercase;
   background: none;
