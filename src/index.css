@@ -100,3 +100,7 @@ button:focus:after {
   text-align: center;
   font-size: 3rem;
 }
+
+.inventory h1 {
+  text-align: center;
+}

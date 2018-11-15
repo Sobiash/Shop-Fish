@@ -7,6 +7,7 @@ import Fish from "./Fish";
 import sampleFishes from "../SampleFishes";
 import "../index.css";
 import base from "../base";
+
 class App extends Component {
   state = {
     fishes: {},
@@ -108,6 +109,7 @@ class App extends Component {
           fishes={this.state.fishes}
           updateFish={this.updateFish}
           deleteFish={this.deleteFish}
+          storeId={this.props.match.params.storeId}
         />
       </div>
     );

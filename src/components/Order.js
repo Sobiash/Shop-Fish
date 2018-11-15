@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { formatPrice } from "../helpers";
-// import "./Order.css";
+import "./Order.css";
 
 class Order extends React.Component {
   static propTypes = {
@@ -46,8 +46,10 @@ class Order extends React.Component {
     return (
       <div className="order-wrap">
         <h1>Order</h1>
-        <ul>{orderKeys.map(this.showOrder)}</ul>
-        Total: {formatPrice(total)}
+        <ul className="order">
+          {orderKeys.map(this.showOrder)}
+          <li className="total">Total:{formatPrice(total)}</li>
+        </ul>
       </div>
     );
   }
