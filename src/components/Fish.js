@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { formatPrice } from "../helpers";
 import "./Fish.css";
+import "../SampleFishes";
 
 class Fish extends React.Component {
   static propTypes = {
