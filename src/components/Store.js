@@ -9,7 +9,8 @@ class Store extends React.Component {
   storeInput = React.createRef();
   goToStore = e => {
     e.preventDefault();
-    const storeName = this.storeInput.current.value;
+    // const storeName = this.storeInput.current.value;
+    const storeName = e.target.elements.myInfo.value;
     this.props.history.push(`/store/${storeName}`);
   };
   render() {
@@ -18,7 +19,8 @@ class Store extends React.Component {
         <h2>Please Enter A Store</h2>
         <input
           type="text"
-          ref={this.storeInput}
+          // ref={this.storeInput}
+          name="myInfo"
           required
           placeholder="Store Name"
           defaultValue={getStoreName()}

@@ -22,7 +22,6 @@ class EditFishForm extends React.Component {
     };
 
     this.props.updateFish(this.props.fishKey, updatedFish);
-    console.log(updatedFish);
   };
   render() {
     return (
